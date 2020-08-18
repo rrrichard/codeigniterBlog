@@ -1,0 +1,9 @@
+CRITICAL - 2020-08-14 11:00:04 --> Invalid file: template/header.php
+#0 /opt/lampp/htdocs/codeigniter4/system/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/header...')
+#1 /opt/lampp/htdocs/codeigniter4/system/Common.php(1119): CodeIgniter\View\View->render('template/header', Array, true)
+#2 /opt/lampp/htdocs/codeigniter4/app/Controllers/Pages.php(15): view('template/header')
+#3 /opt/lampp/htdocs/codeigniter4/system/CodeIgniter.php(918): App\Controllers\Pages->showMe()
+#4 /opt/lampp/htdocs/codeigniter4/system/CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 /opt/lampp/htdocs/codeigniter4/system/CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/codeigniter4/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
