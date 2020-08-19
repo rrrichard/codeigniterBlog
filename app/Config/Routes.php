@@ -30,7 +30,11 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+// This is really like the web.php in laravel
+$routes->get('/', 'Pages::index');
+// (:any) - anything written after the / will be parsed through and added to after showme $1
+$routes->get('(:any)', 'Pages::showme/$1');
+
 
 /**
  * --------------------------------------------------------------------
