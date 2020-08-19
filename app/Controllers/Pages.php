@@ -4,7 +4,10 @@ class Pages extends BaseController
 {
 	public function index()
 	{
-		echo 'Hey';
+        // here is where you specify which views to be displayed
+        echo view('templates/header');
+        echo view('pages/home');
+        echo view('templates/footer');
 	}
 
     public function showMe($page = 'home')
